@@ -12,10 +12,21 @@ using namespace std;
 
 void Mean(double X, double Y)
 {
-	double AMean, GMean;
+	double AMean, GMean = 0;
 	AMean = (X + Y) / 2;
-	GMean = sqrt(X * Y);
-	cout << "X= " << X << endl << "Y= " << Y << endl << "AMean= " << AMean << endl << "GMean= " << GMean << endl;
+	if (X >= 0 && Y >= 0) {
+		GMean = sqrt(X * Y);
+	}
+	else {
+		GMean = -1;
+	}
+	cout << "X= " << X << endl << "Y= " << Y << endl << "AMean= " << AMean << endl;
+	if (GMean != -1) {
+		cout << GMean << endl;
+	}
+	else {
+		cout << "No GMean :(" << endl;
+	}
 }
 
 int main()
