@@ -16,8 +16,9 @@ int main()
 	double* pNum = &Num;
 	cout << "Enter number: ";
 	cin >> *pNum;
-	cout << "Your number: " << &pNum << endl;
-	cout<< "Decimal adresse " << dec << reinterpret_cast<std::uintptr_t>(pNum) << endl;
+	cout << "Your number: " << *pNum << endl;
+	cout<< "Decimal adresse " << dec << reinterpret_cast<uintptr_t>(pNum) << endl;
 	cout << "Hex adresse " << hex << pNum << endl;
+	cout << "Additional: " << Num << " * 2 = " << *pNum * 2 << endl;
 	return 0;
 }

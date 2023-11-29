@@ -8,13 +8,15 @@
 
 using namespace std;
 
+class Object {
+    int bigArray[1000];
+};
+
 int main()
 {
-	int a = 1;
-	while (a != 0)
-	{
-		a++;
-		cout << a;
-	}
-	return 0;
+    while (true) {
+        Object* obj = new Object();
+        cout << "1";
+    }
+    return 0;
 }

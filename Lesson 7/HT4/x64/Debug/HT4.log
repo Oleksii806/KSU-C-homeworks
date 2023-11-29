@@ -1,0 +1,3 @@
+﻿  Leizerovich_O_4.cpp
+D:\VS\Lesson 7\HT4\Leizerovich_O_4.cpp(16,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  HT4.vcxproj -> D:\VS\Lesson 7\HT1\x64\Debug\HT4.exe
